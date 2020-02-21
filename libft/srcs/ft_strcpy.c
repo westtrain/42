@@ -1,40 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 14:17:43 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 14:41:51 by joslee           ###   ########.fr       */
+/*   Created: 2020/02/19 17:30:31 by joslee            #+#    #+#             */
+/*   Updated: 2020/02/19 17:31:54 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	int i;
-	int j;
+    int i = 0;
+	unsigned char* ptr1;
+    unsigned char* ptr2;
 
-	i = 0;
-	j = 0;
-	if (*needle == '\0')
-		return ((char*)haystack);
-	while (haystack[i])
-	{
-		j = 0;
-		if (haystack[i] == needle[j])
-		{
-			j++;
-		}
-		else
-			j = 0;
-		i++;
-		if (needle[j] == '\0')
-			return ((char*)haystack + (i - j));
-	}
-	return (NULL);
+    ptr1 = (unsigned char*)dst;
+    ptr2 = (unsigned char*)src;
+    while (ptr2[i])
+    {
+        ptr1[i] =  ptr2[i];
+        i++;        
+    }
+    ptr1[i] = '\0';
+    return (dst);
 }

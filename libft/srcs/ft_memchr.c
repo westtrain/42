@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 14:17:43 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 14:41:51 by joslee           ###   ########.fr       */
+/*   Created: 2020/02/19 16:44:56 by joslee            #+#    #+#             */
+/*   Updated: 2020/02/19 16:49:49 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int i;
-	int j;
+	unsigned char *ptr;
 
-	i = 0;
-	j = 0;
-	if (*needle == '\0')
-		return ((char*)haystack);
-	while (haystack[i])
+	ptr = (unsigned char*)s;
+	while (*ptr)
 	{
-		j = 0;
-		if (haystack[i] == needle[j])
-		{
-			j++;
-		}
-		else
-			j = 0;
-		i++;
-		if (needle[j] == '\0')
-			return ((char*)haystack + (i - j));
+		if (*ptr == (unsigned char)c)
+			return (ptr);
+		ptr++;
 	}
 	return (NULL);
 }

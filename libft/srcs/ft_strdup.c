@@ -1,40 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 14:17:43 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 14:41:51 by joslee           ###   ########.fr       */
+/*   Created: 2020/02/19 17:21:52 by joslee            #+#    #+#             */
+/*   Updated: 2020/02/19 17:27:34 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+char	*ft_strdup(const char *s1)
 {
-	int i;
-	int j;
+	char *ptr;
+  	int i = 0;
 
-	i = 0;
-	j = 0;
-	if (*needle == '\0')
-		return ((char*)haystack);
-	while (haystack[i])
-	{
-		j = 0;
-		if (haystack[i] == needle[j])
-		{
-			j++;
-		}
-		else
-			j = 0;
-		i++;
-		if (needle[j] == '\0')
-			return ((char*)haystack + (i - j));
-	}
-	return (NULL);
+	ptr = (char*)malloc(sizeof(*s1));
+	while (s1[i])
+  	{
+    	ptr[i] = s1[i];
+    	i++;    
+  	}
+  	ptr[i] = '\0';
+	return (ptr);
 }
