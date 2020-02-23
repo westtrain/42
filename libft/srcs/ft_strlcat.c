@@ -25,6 +25,14 @@
  * size_t i = ft_strlcat("Hello", "World", 100); 일 경우, i 는 10이 된다. dst(5) + src(5) = 10
  * 첫번째 문자열(dst)은 "HelloWorld" 이다.
  * strlcat함수는 string.h헤더파일에 선언되어 있다. 
+ * 
+ * 
+ * strlcat() appends string src to the end of dst. 
+ * It will append at most dstsize - strlen(dst) - 1 characters.
+ * It will then NUL-terminate, unless dstsize is 0 or the original dst string
+ * was longer than dstsize (in practice this should not happen as it means that either
+ * dstsize is incorrect or that dst is not a proper string).
+ * If the src and dst strings overlap, the behavior is undefined.
  */
 
 #include "libft.h"
