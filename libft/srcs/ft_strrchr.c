@@ -6,20 +6,23 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 13:29:51 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 14:16:23 by joslee           ###   ########.fr       */
+/*   Updated: 2020/02/26 16:14:55 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
- * 문자열의 뒤에서부터 문자를 찾은 함수
- * strrchr(문자열, 찾을 문자)함수에서 문자열의 오른쪽 즉, 문자열의 뒷쪽부터 특정문자를 찾아나가면서
- * 찾은 문자열의 주소를 반환한다.
+ * 문자열의 끝에서부터 지정 문자를 찾고 문자열속의 문자 위치를 반환하는 함수.
  * 예를 들어,
- * char *str = strrchr("abcdabc", 'a')함수를 실행하면 문자열 끝에서부터 검색을 시작해서 "abc"의
- * 문자열을 시작하는 주소값을 반환한다. 대소문자를 구분하기 때문에 'A'를 넣었다면 검색하지않고
- * 지나간다. 만약 찾을 문자가 '\0'이라면 문자열의 끝을 반환한다.
- * strrchr함수는 string.h 해더파일에 선언되어 있음.
- */ 
+ * char *str = ft_strrchr("abcdefg", 'd')라고 한다면 "defg"가 반환된다.
+ * 만약 c에 '\0'이 들어온다면, 문자열의 끝("'\0'")를 반환한다.
+ * 찾고자하는 문자가 문자열 속에 없다면 NULL을 반환한다.
+ * 
+ * The ft_strrchr() function locates the last occurrence of c (converted to a
+ * char) in the string pointed to by s.  The terminating null character is
+ * considered to be part of the string; therefore if c is '\0', the functions
+ * locate the terminating '\0'. Returns a pointer to the located character,
+ * or NULL if the character does not appear in the string.
+ */
 
 #include "libft.h"
 
@@ -27,13 +30,11 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int len;
 
-	if (s == NULL)
-		return (NULL);
 	len = ft_strlen(s);
-	while (len > 0)
+	while (len >= 0)
 	{
 		if (s[len] == (char)c)
-			return (&s[len]);
+			return ((char*)s + len);
 		len--;
 	}
 	return (NULL);
