@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 16:29:55 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 17:03:16 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:41:15 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 ** 같은 문장이 시작되는 문자열을 반환하다. ("joaajoshlee")
 ** len에 4의 값의 입력된 경우라면 반환된 문자열의 시작점이 다음처럼 바뀐다. ("joshlee")
 ** 이처럼 len에 입력된 길이에 따라서 찾는 문자의 길이가 달라진다.
-** 만약 needle에 빈문자열이 들어가면 NULL을 반환한다. 
+** 만약 needle에 빈문자열이 들어가면 NULL을 반환한다.
 ** strstr함수는 string.h헤더파일에 선언되어 있다. 이 함수는 FreeBSD전용 API이므로 이식서에
 ** 문제가 없을때만 사용해야 한다.
-** 
+**
 ** The strnstr() function locates the first occurrence of the null-termi-
 ** nated string needle in the string haystack, where not more than len char-
 ** acters are searched.  Characters that appear after a `\0' character are
@@ -59,4 +59,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-

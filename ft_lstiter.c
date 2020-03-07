@@ -6,14 +6,9 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 19:39:15 by joslee            #+#    #+#             */
-/*   Updated: 2020/03/04 15:45:39 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:57:50 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** 
-** Iterates the list lst and applies the function f to each link.
-*/
 
 #include "libft.h"
 

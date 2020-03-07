@@ -6,17 +6,17 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:30:31 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/19 17:31:54 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:21:34 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** 인자로 받은 두번째 문자열을 첫번째 문자열에 복사하는 함수.
-** 예를 들어, 
+** 예를 들어,
 ** char *str = ft_strcpy("Hello", "World"); 라고 한다면 결과 값은 "World"가 된다.
 ** 복사후 문자열의 끝에는 반드시 '\0'을 넣는다.
 ** 이 함수는 문자열의 복사 과정에서 중복을 허용한다.
-** 
+**
 ** The stpcpy() and strcpy() functions copy the string src to dst (including
 ** the terminating `\0' character.)
 ** The stpncpy() and strncpy() functions copy at most len characters from

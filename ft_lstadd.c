@@ -6,15 +6,9 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 19:25:41 by joslee            #+#    #+#             */
-/*   Updated: 2020/03/03 19:29:11 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:58:55 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** 
-** 
-** Adds the element new at the beginning of the list.
-*/
 
 #include "libft.h"
 

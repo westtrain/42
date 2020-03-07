@@ -6,20 +6,20 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:21:52 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/19 17:27:34 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:22:45 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** 인자로 받은 문자열과 똑같은 크기의 문자열을 만들고 복사 후 반환하는 함수.
-** 예를 들어, 
+** 예를 들어,
 ** char *s = "Hello";
 ** char *str = ft_strdup(s); 라고 한다면 크기가 5인 str의 포인터 변수안에
-** "Hello"를 복사해 넣고 그 포인터의 시작점을 반환한다. 
+** "Hello"를 복사해 넣고 그 포인터의 시작점을 반환한다.
 ** 반드시 문자열의 끝에 '\0'을 넣는다.
 ** 만약 메모리 할당에 실패했다면, NULL을 반환한다.
-** 
-** The strdup() function allocates sufficient memory for a copy of 
+**
+** The strdup() function allocates sufficient memory for a copy of
 ** the string s1, does the copy, and returns a pointer to it.  The pointer may
 ** subsequently be used as an argument to the function free(3).
 ** If insufficient memory is available, NULL is returned and errno is set to

@@ -6,15 +6,15 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 13:01:04 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 13:09:14 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:24:23 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** 빈 문자열을 만들고 인자로 받은 함수를 통해 인자로 받은 문자열을 빈 문자열에 복사하고
-** 반환하는 함수. 
-** 인자로 받은 함수에 따라 빈문자열에 인자로 받은 문자열 그대로 들어가거나 달라진 문자열을 
-** 받게 될 수 있다. 
+** 반환하는 함수.
+** 인자로 받은 함수에 따라 빈문자열에 인자로 받은 문자열 그대로 들어가거나 달라진 문자열을
+** 받게 될 수 있다.
 ** 예를 들어,
 ** char *s = "Hello";
 ** char swap_str(char *s);
@@ -22,9 +22,9 @@
 ** swap_str함수를 지나가면서 변형된다면 변형된 그대로 들어가게 된다.
 ** 새 문자열에 끝에는 반드시 '\0'을 넣어야 한다.
 ** 인자로 받은 문자열이나 함수가 NULL이라면 NULL을 반환한다.
-** 
-** Applies the function f to each character of the string given as argument 
-** to create a “fresh” new string (with malloc(3)) resulting 
+**
+** Applies the function f to each character of the string given as argument
+** to create a “fresh” new string (with malloc(3)) resulting
 ** from the successive applications of f.
 */
 
@@ -32,8 +32,8 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	int 	i;
-	char 	*str;
+	int		i;
+	char	*str;
 
 	i = 0;
 	if (s == NULL || f == NULL)

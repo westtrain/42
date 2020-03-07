@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 12:33:20 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/20 12:40:19 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 17:25:38 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 ** 해제한다. 그리고 메모리가 해제된 포인터에 NULL을 넣는다. 메모리가 해제된다는 것은 할당된 메모리
 ** 주소가 사라진다는 의미가 아니다. 주소는 남아 있고 그 안에 있는 내용과 크기가 없어진다.
 ** 그러므로 그 메모리 주소에 NULL을 넣어줘야 한다.
-** 
-** Takes as a parameter the address of a memory area 
+**
+** Takes as a parameter the address of a memory area
 ** that needs to be freed with free(3), then puts the pointer to NULL.
 */
 
