@@ -30,17 +30,18 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-    int i = 0;
-	unsigned char* ptr1;
-    unsigned char* ptr2;
+	int					i;
+	unsigned char		*ptr1;
+	unsigned char		*ptr2;
 
-    ptr1 = (unsigned char*)dst;
-    ptr2 = (unsigned char*)src;
-    while (ptr2[i])
-    {
-        ptr1[i] =  ptr2[i];
-        i++;        
-    }
-    ptr1[i] = '\0';
-    return (dst);
+	i = 0;
+	ptr1 = (unsigned char*)dst;
+	ptr2 = (unsigned char*)src;
+	while (ptr2[i])
+	{
+		ptr1[i] = ptr2[i];
+		i++;
+	}
+	ptr1[i] = '\0';
+	return (dst);
 }

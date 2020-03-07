@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 14:42:52 by joslee            #+#    #+#             */
-/*   Updated: 2020/02/23 14:45:59 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 16:42:14 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ** input, standard output, or standard error, respectively.
 */
 
-#incldue "libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {

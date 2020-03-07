@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 13:08:57 by joslee            #+#    #+#             */
-/*   Updated: 2020/03/02 13:18:43 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 16:44:41 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 #include "libft.h"
 
-int		ft_strlen_delim(char *s, int pos, char delim)
+int		ft_strlen_delim(char const *s, int pos, char delim)
 {
 	int len;
 

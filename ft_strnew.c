@@ -27,7 +27,7 @@ char	*ft_strnew(size_t size)
 {
 	char *str;
 
-	str = ft_memalloc(size + 1);
+	str = ft_memalloc(sizeof(char) * (size + 1));
 	if (!str)
 		return (NULL);
 	return (str);

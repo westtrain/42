@@ -13,7 +13,7 @@ SRCS=ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 	 ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_memrcpy.c \
 	 ft_ndigits.c ft_strlen_delim.c ft_strcounter_delim.c \
 	 ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
-	 ft_lstmap.c
+	 ft_lstmap.c ft_swap.c
 OBJ=ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	 ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o \
 	 ft_strncpy.o ft_strcat.o ft_strncat.o ft_strlcat.o ft_strchr.o \
@@ -27,7 +27,7 @@ OBJ=ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	 ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_memrcpy.o \
 	 ft_ndigits.o ft_strlen_delim.o ft_strcounter_delim.o \
 	 ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o \
-	 ft_lstmap.o
+	 ft_lstmap.o ft_swap.o
 
 $(NAME): libft.h $(SRCS)
 	gcc $(CFLAG) -c $(SRCS) 

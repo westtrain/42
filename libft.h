@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 22:24:04 by joslee            #+#    #+#             */
-/*   Updated: 2020/03/05 14:59:39 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 16:38:38 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void					*ft_memrcpy(void *dst, const void *src, size_t index);
 int						ft_ndigits(int n);
 int						ft_strcounter_delim(char const *s, char c);
 int						ft_strlen_delim(char const *s, int pos, char delim);
+void					ft_swap(int *a, int *b);
 void					*ft_memalloc(size_t size);
 void					ft_memdel(void **ap);
 char					*ft_strnew(size_t size);
