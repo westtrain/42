@@ -6,7 +6,7 @@
 /*   By: joslee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 13:18:20 by joslee            #+#    #+#             */
-/*   Updated: 2020/03/06 17:35:16 by joslee           ###   ########.fr       */
+/*   Updated: 2020/03/06 18:14:21 by joslee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 	while (s1[i] && s2[i] && i < n - 1 && s1[i] == s2[i])
 		i++;
 	if ((s1[i] - s2[i]) != 0)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
